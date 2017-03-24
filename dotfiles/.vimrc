@@ -23,21 +23,26 @@ let g:NERDTreeDirArrows=0
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-
-set ttymouse=xterm2
+set undofile                " Save undo's after file closes
+set undodir=$HOME/.vim/undo " where to save undo histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undoset ttymouse=xterm2
 set mouse=a
 set ttyfast
 set encoding=utf-8
 set hlsearch
 set incsearch
 set background=dark
-set tabstop=4
-set shiftwidth=2
 set nocompatible
+set autoindent
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
 set t_Co=256
-syntax on
-set omnifunc=syntaxcomplete#Complete
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
 set nobackup
 set nowritebackup
 set noswapfile
