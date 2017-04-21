@@ -1,0 +1,1 @@
+grep --include={*.php,*.html,*.js} -rnl './' -e "old-word" | xargs -i@ sed -i 's/old-word/new-word/g' @
