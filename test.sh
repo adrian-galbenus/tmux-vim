@@ -2,4 +2,4 @@
 
 exedir=$(readlink -f $(dirname $0))
 
-echo $exedir
+echo "test"
