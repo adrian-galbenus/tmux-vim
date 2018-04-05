@@ -3,3 +3,4 @@
 exedir=$(readlink -f $(dirname $0))
 
 echo "test"
+echo $exedir
