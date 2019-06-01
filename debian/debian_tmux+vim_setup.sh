@@ -30,9 +30,9 @@ else
 fi
 
 
-read -p "This step will install java 8 if you are using a lower version.
-	Are you sure you want to do this? (Y/N) " -n 1 -r
-echo    # (optional) move to a new line
+#read -p "This step will install java 8 if you are using a lower version.
+#	Are you sure you want to do this? (Y/N) " -n 1 -r
+#echo    # (optional) move to a new line
 #if [[ ! $REPLY =~ ^[Yy]$ ]]
 #   then
 #	[[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
