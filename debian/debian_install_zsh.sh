@@ -51,7 +51,7 @@ fi
 sudo command -v zsh | sudo tee -a /etc/shells
 sudo chsh -s $(which zsh) "${USER}" 
 
-cp -rf  ../dotfiles/.zshrc ~/
+cp -f  ../dotfiles/.zshrc ~/
 
 rm -rf zsh 
 
